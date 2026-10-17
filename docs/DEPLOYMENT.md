@@ -29,14 +29,14 @@ On the target Linux host, install `cosign`, then choose a published version. Use
 ```bash
 VERSION=v0.1.0
 TARGET=aarch64-unknown-linux-gnu
-curl -fL "https://github.com/cybercore-tech/hermes/releases/download/${VERSION}/hermes-${VERSION}-${TARGET}.tar.gz" -o hermes.tar.gz
-curl -fL "https://github.com/cybercore-tech/hermes/releases/download/${VERSION}/hermes-${VERSION}-${TARGET}.tar.gz.sha256" -o hermes.tar.gz.sha256
-curl -fL "https://github.com/cybercore-tech/hermes/releases/download/${VERSION}/hermes-${VERSION}-${TARGET}.tar.gz.sigstore.json" -o hermes.tar.gz.sigstore.json
+curl -fL "https://github.com/cybercoretech/hermes/releases/download/${VERSION}/hermes-${VERSION}-${TARGET}.tar.gz" -o hermes.tar.gz
+curl -fL "https://github.com/cybercoretech/hermes/releases/download/${VERSION}/hermes-${VERSION}-${TARGET}.tar.gz.sha256" -o hermes.tar.gz.sha256
+curl -fL "https://github.com/cybercoretech/hermes/releases/download/${VERSION}/hermes-${VERSION}-${TARGET}.tar.gz.sigstore.json" -o hermes.tar.gz.sigstore.json
 
 printf '%s  hermes.tar.gz\n' "$(awk '{print $1}' hermes.tar.gz.sha256)" | sha256sum --check
 cosign verify-blob hermes.tar.gz \
   --bundle hermes.tar.gz.sigstore.json \
-  --certificate-identity-regexp 'https://github.com/cybercore-tech/hermes/.github/workflows/release.yml@refs/tags/v.*' \
+  --certificate-identity-regexp 'https://github.com/cybercoretech/hermes/.github/workflows/release.yml@refs/tags/v.*' \
   --certificate-oidc-issuer 'https://token.actions.githubusercontent.com'
 ```
 

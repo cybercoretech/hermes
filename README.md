@@ -10,7 +10,7 @@ portfolio's GitHub repos into Discord via slash commands. It can also publish
 an opt-in, stateful project-update digest to `#dev-log`. No privileged gateway
 intents or message reading are required.
 
-**[Open the Hermes Watch project page →](https://cybercore-tech.github.io/hermes/)** · **[Read the capability roadmap →](docs/ROADMAP.md)**
+**[Open the Hermes Watch project page →](https://cybercoretech.github.io/hermes/)** · **[Read the capability roadmap →](docs/ROADMAP.md)**
 
 For unattended operation, use the signed release workflow and hardened systemd deployment described in [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
 

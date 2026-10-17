@@ -35,27 +35,27 @@ const FEATURED_TOOLS: &[(&str, &str, &str)] = &[
     (
         "cybercore",
         "The shared design system every tool above is built on.",
-        "https://cybercore-tech.github.io/cybercore/",
+        "https://cybercoretech.github.io/cybercore/",
     ),
     (
         "cyberdeck",
         "Systems intelligence framework.",
-        "https://cybercore-tech.github.io/cyberdeck/",
+        "https://cybercoretech.github.io/cyberdeck/",
     ),
     (
         "diagprint",
         "Rust diagnostics lifecycle framework.",
-        "https://cybercore-tech.github.io/diagprint/",
+        "https://cybercoretech.github.io/diagprint/",
     ),
     (
         "gateflow",
         "Kernel-sandbox testing with netns, chaos, and veth.",
-        "https://cybercore-tech.github.io/gateflow/",
+        "https://cybercoretech.github.io/gateflow/",
     ),
     (
         "cybermeta",
         "TUI EXIF metadata tool.",
-        "https://cybercore-tech.github.io/cybermeta/",
+        "https://cybercoretech.github.io/cybermeta/",
     ),
 ];
 
