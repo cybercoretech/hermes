@@ -1,6 +1,6 @@
 //! The portfolio registry -- every public cybercore-tech repo that's actually
 //! part of the Cybercore family (queried live via `gh api
-//! users/cybercore-tech/repos`, not guessed from memory). Deliberately
+//! users/cybercoretech/repos`, not guessed from memory). Deliberately
 //! excludes: the profile README and hub-site repos (not binary tools with
 //! releases), and ferraxis/vexlang (real projects, but a separate
 //! compiler/language-design line of work, not Cybercore). A private repo
@@ -8,27 +8,27 @@
 //! sync with reality rather than adding speculatively.
 
 const REPOS: &[(&str, &str)] = &[
-    ("echo", "cybercore-tech/echo"),
-    ("cybermeta", "cybercore-tech/cybermeta"),
-    ("cybervault", "cybercore-tech/cybervault"),
-    ("keysmith", "cybercore-tech/keysmith"),
-    ("cyberterm", "cybercore-tech/cyberterm"),
-    ("sentrygrid", "cybercore-tech/sentrygrid"),
-    ("wraithflow", "cybercore-tech/wraithflow"),
-    ("vortexwall", "cybercore-tech/vortexwall"),
-    ("aetherscope", "cybercore-tech/aetherscope"),
-    ("ghostport", "cybercore-tech/ghostport"),
-    ("apexdaemon", "cybercore-tech/apexdaemon"),
-    ("cybercore", "cybercore-tech/cybercore"),
-    ("cyberdeck", "cybercore-tech/cyberdeck"),
-    ("cyberplug", "cybercore-tech/cyberplug"),
+    ("echo", "cybercoretech/echo"),
+    ("cybermeta", "cybercoretech/cybermeta"),
+    ("cybervault", "cybercoretech/cybervault"),
+    ("keysmith", "cybercoretech/keysmith"),
+    ("cyberterm", "cybercoretech/cyberterm"),
+    ("sentrygrid", "cybercoretech/sentrygrid"),
+    ("wraithflow", "cybercoretech/wraithflow"),
+    ("vortexwall", "cybercoretech/vortexwall"),
+    ("aetherscope", "cybercoretech/aetherscope"),
+    ("ghostport", "cybercoretech/ghostport"),
+    ("apexdaemon", "cybercoretech/apexdaemon"),
+    ("cybercore", "cybercoretech/cybercore"),
+    ("cyberdeck", "cybercoretech/cyberdeck"),
+    ("cyberplug", "cybercoretech/cyberplug"),
     (
         "cyberplug-bar-widget",
-        "cybercore-tech/cyberplug-bar-widget",
+        "cybercoretech/cyberplug-bar-widget",
     ),
-    ("diagprint", "cybercore-tech/diagprint"),
-    ("gateflow", "cybercore-tech/gateflow"),
-    ("agentforge", "cybercore-tech/agentforge"),
+    ("diagprint", "cybercoretech/diagprint"),
+    ("gateflow", "cybercoretech/gateflow"),
+    ("agentforge", "cybercoretech/agentforge"),
 ];
 
 const FEATURED_TOOLS: &[(&str, &str, &str)] = &[
