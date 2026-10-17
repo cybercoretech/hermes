@@ -22,10 +22,7 @@ const REPOS: &[(&str, &str)] = &[
     ("cybercore", "cybercoretech/cybercore"),
     ("cyberdeck", "cybercoretech/cyberdeck"),
     ("cyberplug", "cybercoretech/cyberplug"),
-    (
-        "cyberplug-bar-widget",
-        "cybercoretech/cyberplug-bar-widget",
-    ),
+    ("cyberplug-bar-widget", "cybercoretech/cyberplug-bar-widget"),
     ("diagprint", "cybercoretech/diagprint"),
     ("gateflow", "cybercoretech/gateflow"),
     ("agentforge", "cybercoretech/agentforge"),
