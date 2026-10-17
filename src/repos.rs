@@ -1,4 +1,4 @@
-//! The portfolio registry -- every public cybercore-tech repo that's actually
+//! The portfolio registry -- every public cybercoretech organization repo that's actually
 //! part of the Cybercore family (queried live via `gh api
 //! users/cybercoretech/repos`, not guessed from memory). Deliberately
 //! excludes: the profile README and hub-site repos (not binary tools with
