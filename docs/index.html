@@ -12,7 +12,75 @@
     <title>Hermes Watch · Cybercore messenger bot</title>
     <link rel="icon" type="image/png" href="assets/hermes-watch-mark.png" />
     <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="stylesheet" href="https://cybercoretech.github.io/kit/chooser.css">
+  <style>
+    cybercore-theme-chooser{--ccx-bg:var(--panel-strong);--ccx-fg:var(--text);--ccx-line:var(--line-bright);--ccx-accent:var(--cyan);--ccx-focus:var(--cyan);--ccx-field:var(--void);--ccx-muted:var(--muted);--ccx-button-bg:transparent;--ccx-button-border:var(--line-bright);--ccx-radius:999px;--ccx-button-width:auto;--ccx-height:2.25rem;--ccx-glow:.5;}
+  </style>
+  <script>window.SITE = Object.assign(window.SITE || {}, {"siteLabel": "Hermes Watch", "themeVars": {"bg": "--void", "panel": "--panel-strong", "white": "--text", "purple": "--violet", "orange": "--gold", "acid_green": "--green"}});</script>
+  <script type="module" src="https://cybercoretech.github.io/kit/chooser.js"></script>
+  <style id="cc-mobile-first">
+/* Mobile floor (phones + tablets): readable text and finger-sized targets.
+   Generated per range from what renders under 11px / 24px; desktop untouched. */
+@media (max-width: 600px) {
+  span > small,
+  div.signal > span,
+  div.console-label > span,
+  div.ticker > span,
+  p.card-kicker,
+  div.panel-topline > span,
+  div.board-axis > span,
+  div.board-row > b,
+  div.panel-footer > span,
+  div.command-row > small,
+  div.code-card-top > small,
+  div.code-card-top > button { font-size: 11px !important; }
+}
+@media (min-width: 601px) and (max-width: 860px) {
+  span > small,
+  div.signal > span,
+  div.console-label > span,
+  div.ticker > span,
+  p.card-kicker,
+  div.panel-topline > span,
+  div.board-axis > span,
+  div.board-row > b,
+  div.panel-footer > span,
+  div.command-row > small,
+  div.code-card-top > small,
+  div.code-card-top > button { font-size: 11px !important; }
+}
+@media (min-width: 861px) and (max-width: 1024px) {
+  span > small,
+  div.signal > span,
+  div.console-label > span,
+  div.ticker > span,
+  p.card-kicker,
+  div.panel-topline > span,
+  div.board-axis > span,
+  div.board-row > b,
+  div.panel-footer > span,
+  div.command-row > small,
+  div.code-card-top > small,
+  div.code-card-top > button { font-size: 11px !important; }
+}
+@media (pointer: coarse) {
+  div.code-card-top > button,
+  div.footer-links > a { min-height: 24px; min-width: 24px; }
+}
+/* Layout fixes: phones and tablets only; laptops and desktops untouched. */
+@media (max-width: 1024px) {
+  /* Mobile first: nothing may make the page wider than the screen.
+     Grid/flex columns may shrink below their widest line; code scrolls in place. */
+  pre { max-width: 100%; overflow-x: auto; }
+  img, video { max-width: 100%; height: auto; }
+  div.ticker > * { min-width: 0; }
+  /* Long paths and URLs in inline code may break anywhere instead of widening the page. */
+  :not(pre) > code { overflow-wrap: anywhere; }
+  /* Phones: command table headings at least 11px. */
+  .command-head span { font-size: 11px; }
+}
+  </style>
+</head>
   <body>
     <div class="page-glow page-glow-one" aria-hidden="true"></div>
     <div class="page-glow page-glow-two" aria-hidden="true"></div>
@@ -28,6 +96,7 @@
         <a href="#setup">Setup</a>
       <a data-cybercore-master-docs href="https://cybercoretech.github.io/cybercore/docs.html" style="color:#22e6ff;border:1px solid #263454;border-radius:999px;padding:7px 12px;text-decoration:none;font:600 .7rem ui-monospace,monospace;letter-spacing:.08em;white-space:nowrap">MASTER DOCS ↗</a></nav>
       <div class="topbar-actions">
+        <cybercore-theme-chooser compact match=".topbar nav a:not([data-cybercore-master-docs])"></cybercore-theme-chooser>
         <span class="pulse-status"><i></i> online by design</span>
         <a class="icon-link" href="https://github.com/cybercoretech/hermes" aria-label="Hermes Watch on GitHub">↗</a>
       </div>
